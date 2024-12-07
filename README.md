@@ -55,7 +55,7 @@ Ensure that you have following items are installed in your computer:
 Clone the project from Github repository into your local repository:  [ prj-angular-masterpage ](https://github.com/mystackbox/prj-angular-masterpage). For more information about how to clone the GitHub repository, see [Cloning GitHub repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
 
-### 4. Start the Localhost server
+### 3. Start the Localhost server
 
 Run the following command in your `CLI` to install all the rrequired packages:
 ```javascript
