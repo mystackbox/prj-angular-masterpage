@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'prj-dir-structure'`, () => {
+  it(`should have as title 'monakali'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('prj-dir-structure');
+    expect(app.title).toEqual('monakali');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, prj-dir-structure');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, monakali');
   });
 });

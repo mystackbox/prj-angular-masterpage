@@ -1,13 +1,13 @@
 {
-  "name": "prj-dir-structure",
+  "name": "monakali",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:prj-dir-structure": "node dist/prj-dir-structure/server/server.mjs"
+    "test": "sass ./src/scss/styles.scss ./src/styles.css --watch",
+    "serve:ssr:monakali": "node dist/monakali/server/server.mjs"
   },
   "private": true,
   "dependencies": {
@@ -21,7 +21,10 @@
     "@angular/platform-server": "^17.2.0",
     "@angular/router": "^17.2.0",
     "@angular/ssr": "^17.2.3",
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.3.3",
     "express": "^4.18.2",
+    "jquery": "^3.7.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

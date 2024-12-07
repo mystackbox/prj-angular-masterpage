@@ -1,11 +1,33 @@
+    <div class=" master-page-grid site-container">
 
-<layout-nav-bar></layout-nav-bar>
-
-<h4>Master Page</h4>
-
-    <div class="master-page-container">
-        <router-outlet></router-outlet>
-    </div>
+        <section class="navbar-container">
+            <app-nav-bar></app-nav-bar>
+        </section>
     
-<layout-side-bar></layout-side-bar>
-<layout-footer></layout-footer>
+        <header class="header-container grid-area-common">
+            <app-header></app-header>
+        </header>
+    
+        <section class="carousel-container grid-area-common">
+            <app-carousel></app-carousel>
+        </section>
+    
+        <section class="page-content-container">
+            
+            <section class="page-content-main grid-area-common">
+                <router-outlet></router-outlet>
+            </section>
+    
+            <section class="sidebar-container grid-area-common">
+                <app-side-bar></app-side-bar>
+            </section>
+            
+        </section>
+    
+        
+        <footer class="footer-container grid-area-common bg-body-secondary">
+            <app-footer></app-footer>
+        </footer>
+    
+    </div>
+

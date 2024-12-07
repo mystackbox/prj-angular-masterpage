@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'features-contact',
+  selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
