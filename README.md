@@ -14,7 +14,7 @@
 
 # Introduction
 
-Master-page template developed with `Angular 2+` framework, with the implementation of responsive web design principles. The template directory-structure uses lazy-loading approach. The objective is to conform to separation of concern, while promoting code maintainability. 
+Master-page template developed using `Angular 2+` framework, with the implementation of responsive web design principles. The template directory-structure uses lazy-loading approach. The objective is to conform to separation of concern, while promoting code maintainability. 
 
 [Back to top](#table-of-contents)
 
