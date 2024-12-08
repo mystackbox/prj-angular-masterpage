@@ -29,7 +29,7 @@ Master-page template developed using `Angular 2+` framework, with the implementa
 [Back to top](#table-of-contents)
 
 # Tech stack
-- Responsive Web Design (HTML5, SCSS, Bootstrap5)
+- Responsive Web Design (HTML5, SCSS, Bootstrap5, Lazy-loading)
 - Lazy-loading concept
 - Angular/Typescript framework - v17.3.10
 
