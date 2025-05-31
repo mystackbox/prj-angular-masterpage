@@ -11,9 +11,9 @@ export const routes: Routes = [
     component: MasterpageComponent, // Master page
     children: [
       { path: '', component: HomeComponent, title: 'Home' },
-      { path: 'about', component: AboutUsComponent, title: 'About Us' },
-      { path: 'services', component: OurServicesComponent, title: 'Our Services' },
-      { path: 'contactus', component: ContactUsComponent, title: 'Contact Us' },
+      { path: 'about-us', component: AboutUsComponent, title: 'About Us' },
+      { path: 'out-services', component: OurServicesComponent, title: 'Our Services' },
+      { path: 'contact-us', component: ContactUsComponent, title: 'Contact Us' },
       // Add other routes here
     ]
   },
