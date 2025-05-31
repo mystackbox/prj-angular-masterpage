@@ -33,7 +33,6 @@ yarn-error.log*
 # Package lock files (optional: ignore only if you don't want to track lock files)
 /package-lock.json
 /yarn.lock
-/pnpm-lock.yaml
 
 # Compiled style outputs
 /src/**/*.css
