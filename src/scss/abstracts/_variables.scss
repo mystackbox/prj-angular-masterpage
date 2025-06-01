@@ -1,26 +1,26 @@
-/* global font size */
-$global-font-size: 14px;
+// Color palette
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$danger-color: #e74c3c;
+$warning-color: #f39c12;
+$dark-color: #2c3e50;
+$light-color: #ecf0f1;
 
-/* global font color */
-$global-font-color: rgba(0,0,0, 1);
+// Typography
+$font-primary: 'Helvetica Neue', Arial, sans-serif;
+$font-secondary: Georgia, serif;
+$font-size-base: 16px;
+$line-height-base: 1.6;
 
-/* global border radius */
-$global-border-radius: 6px;
+// Spacing
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 2rem;
+$spacing-xl: 4rem;
 
-/* global Layouts gaps */
-$global-gap: 10px;
-
-/* global background color variables */
-$global-bg-color: rgba(245,245,245, 0.5);
-
-/* global form controls - textbox */
-$input-text-border: 1px solid rgba(245,245,245, 0.5);
-$input-text-font-size: 10px;
-$input-text-font-color: rgba(245,245,245, 0.5);
-
-/* global form controls - placeholder */
-$form-placeholder-size: 13px;
-$form-placeholder-color: lightgrey;
-
-/* global form controls - error messages */
-$error-message-color: red;
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;

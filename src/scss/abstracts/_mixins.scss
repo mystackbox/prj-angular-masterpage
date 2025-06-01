@@ -1,0 +1,49 @@
+// Responsive breakpoints mixin
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == sm {
+    @media (min-width: #{$breakpoint-sm}) { @content; }
+  }
+  @if $breakpoint == md {
+    @media (min-width: #{$breakpoint-md}) { @content; }
+  }
+  @if $breakpoint == lg {
+    @media (min-width: #{$breakpoint-lg}) { @content; }
+  }
+  @if $breakpoint == xl {
+    @media (min-width: #{$breakpoint-xl}) { @content; }
+  }
+}
+
+// Button mixin with variants
+@mixin button-variant($bg-color, $text-color: white) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: 2px solid $bg-color;
+  
+  &:hover {
+    background-color: darken($bg-color, 10%);
+    border-color: darken($bg-color, 10%);
+  }
+  
+  &:focus {
+    box-shadow: 0 0 0 3px rgba($bg-color, 0.25);
+  }
+}
+
+// Flex center mixin
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Card shadow mixin
+@mixin card-shadow($level: 1) {
+  @if $level == 1 {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  } @else if $level == 2 {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  } @else if $level == 3 {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+}
