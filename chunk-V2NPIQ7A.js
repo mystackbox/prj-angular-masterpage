@@ -1,0 +1,1 @@
+import{Aa as o,Ba as r,Ea as n,ta as s}from"./chunk-MFYS3YCH.js";var i=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=s({type:t,selectors:[["app-our-services"]],decls:2,vars:0,template:function(e,p){e&1&&(o(0,"p"),n(1,"our-services works!"),r())},encapsulation:2})};export{i as OurServicesComponent};

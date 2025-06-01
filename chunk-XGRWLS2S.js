@@ -1,0 +1,1 @@
+import{Aa as n,Ba as s,Ea as a,ta as o}from"./chunk-MFYS3YCH.js";var p=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=o({type:t,selectors:[["app-about-us"]],decls:2,vars:0,template:function(e,i){e&1&&(n(0,"p"),a(1,"about-us works!"),s())},encapsulation:2})};export{p as AboutUsComponent};
