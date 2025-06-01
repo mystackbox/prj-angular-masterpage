@@ -1,7 +1,21 @@
-/*  Rest to default setting */
-* {
-        //page align
-        margin: 0;
-        padding: 0;
+
+@use '../abstracts' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-    
+
+html {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+body {
+  font-family: $font-primary;
+  color: $dark-color;
+  background-color: white;
+}

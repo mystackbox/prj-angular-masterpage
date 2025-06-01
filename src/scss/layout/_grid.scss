@@ -1,19 +1,20 @@
+@use '../abstracts' as *;
 /*  
     Grid layout structure 
     Mobile-first approach
 */
-.master-page-grid { 
+.site-grid { 
+      background-color: red;
+        margin: auto;
+        max-width: 1200px;
     
-    margin: auto;
-    max-width: 900px;
-
     display: grid;
     gap: 2px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr auto 1fr ;
     grid-template-areas:"navbar"
                         "header"
-                        "carousel"
+                        "call-to-action"
                         "main"
                         "footer";
 
@@ -32,14 +33,14 @@
 }
 
 /* Header Grid Area */
-.header-container {
+.idetity-container {
     grid-area: header;
     display: grid;
 }
 
 /* Carousel Grid Area */
-.carousel-container {
-    grid-area: carousel;
+.call-to-action-container {
+    grid-area: call-to-action;
 }
 
 /* Page Main Area */
@@ -75,9 +76,9 @@
     
     /*  Large screens - Grid Layout areas */
      .master-page-grid { 
-         grid-template-areas:"navbar "
-                             "header "
-                             "carousel "
+         grid-template-areas:"navbar"
+                             "header"
+                             "call-to-action"
                              "main"
                              "footer";
      } 

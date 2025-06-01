@@ -1,21 +1,57 @@
 import { Routes } from '@angular/router';
-import { MasterpageComponent } from './layout/masterpage/masterpage.component';
-import { HomeComponent } from './features/home/pages/home/home.component';
-import { AboutUsComponent } from './features/about-us/pages/about-us/about-us.component';
-import { OurServicesComponent } from './features/our-services/pages/our-services/our-services.component';
-import { ContactUsComponent } from './features/contact-us/pages/contact-us/contact-us.component';
+import { GridComponent } from './layout/grid/grid.component';
 
 export const routes: Routes = [
-     {
+  // { path: '', redirectTo: 'home', pathMatch: 'full' },
+  {
     path: '',
-    component: MasterpageComponent, // Master page
+    component: GridComponent,
     children: [
-      { path: '', component: HomeComponent, title: 'Home' },
-      { path: 'about-us', component: AboutUsComponent, title: 'About Us' },
-      { path: 'our-services', component: OurServicesComponent, title: 'Our Services' },
-      { path: 'contact-us', component: ContactUsComponent, title: 'Contact Us' },
-      // Add other routes here
-    ]
+      {
+        path: '',
+        loadComponent: () =>
+          import('./features/home/pages/home/home.component').then(
+            (m) => m.HomeComponent
+          ), // Lazy load Home
+        title: 'Home',
+      },
+
+      {
+        path: 'about-us',
+        loadComponent: () =>
+          import('./features/about-us/pages/about-us/about-us.component').then(
+            (m) => m.AboutUsComponent
+          ), // Lazy load about-us
+        title: 'About Us',
+      },
+
+      {
+        path: 'our-services',
+        loadComponent: () =>
+          import(
+            './features/our-services/pages/our-services/our-services.component'
+          ).then((m) => m.OurServicesComponent), // Lazy load our-services
+        title: 'Our Services',
+      },
+
+      {
+        path: 'contact-us',
+        loadComponent: () =>
+          import(
+            './features/contact-us/pages/contact-us/contact-us.component'
+          ).then((m) => m.ContactUsComponent), // Lazy load contact-us
+        title: 'Contact Us',
+      },
+
+      {
+        path: 'page-not-found',
+        loadComponent: () =>
+          import(
+            './features/page-not-found/pages/page-not-found/page-not-found.component'
+          ).then((m) => m.PageNotFoundComponent), // Lazy load page-not-found
+        title: 'Contact Us',
+      },
+    ],
   },
-  { path: '**', redirectTo: '' } // Catch-all route
+  { path: '**', redirectTo: '/page-not-found' }, // Catch-all route
 ];

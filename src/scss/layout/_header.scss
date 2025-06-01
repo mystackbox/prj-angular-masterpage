@@ -1,2 +1,26 @@
 /*  Site header */
 @use '../abstracts' as *;
+
+
+.header {
+  background: linear-gradient(135deg, $primary-color, $secondary-color);
+  color: white;
+  padding: $spacing-xl 0;
+  text-align: center;
+  
+  &__title {
+    font-size: $font-size-base;
+    margin-bottom: $spacing-md;
+    
+    @include respond-to(md) {
+      font-size: $font-size-base;
+    }
+  }
+  
+  &__subtitle {
+    font-size: $font-size-base;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
